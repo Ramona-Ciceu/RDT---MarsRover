@@ -10,7 +10,7 @@ namespace MarsRover {
 
         static void Main(string[] args) {
 
-          //  List<string> rover = new List<string>();
+       
 
 
             Console.WriteLine("Please enter the plateau size: X and Y: ");
