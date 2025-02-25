@@ -14,11 +14,11 @@ namespace MarsRover
         //Storing the current position and direction of the rover
         public int X { get; set; }
         public int Y { get; set; }
-        public char direction { get; set; }
+        public string direction { get; set; }
 
         //Constructor
         //Initilising rover's starting position and direction
-        public Rover(int x, int y, char direction)
+        public Rover(int x, int y, string direction)
         {
             this.X = x;
             this.Y = y;
@@ -33,20 +33,20 @@ namespace MarsRover
 
             switch (direction)
             {
-                case 'N':
-                    direction = 'W';
+                case "N":
+                    direction = "W";
                     break;
-                case 'S':
-                    direction = 'E';
+                case "S":
+                    direction = "E";
                     break;
-                case 'W':
-                    direction = 'S';
+                case "W":
+                    direction = "S";
                     break;
-                case 'E':
-                    direction = 'N';
+                case "E":
+                    direction = "N";
                     break;
               
-                default: direction = 'N';
+                default: direction = "N";
                     break;      
             }     
         }
@@ -56,19 +56,19 @@ namespace MarsRover
         public void rightTurn() {
             switch (direction)
             {
-                case 'N':
-                    direction = 'E';
+                case "N":
+                    direction = "E";
                     break;
-                case 'S':
-                    direction = 'W';
+                case "S":
+                    direction = "W";
                     break;
-                case 'W':
-                direction = 'N';
+                case "W":
+                direction = "N";
                     break;
-                case 'E':
-                    direction = 'N';
+                case "E":
+                    direction = "N";
                     break;
-                default: direction = 'N';
+                default: direction = "N";
                     break;
             }
 
@@ -79,15 +79,15 @@ namespace MarsRover
     public void move() {
         switch (direction)
             {
-                case 'N': Y += 1;
+                case "N": Y += 1;
                     break;
-                case 'S': Y -= 1;
+                case "S": Y -= 1;
                     break;
-                case 'W': X -= 1;
+                case "W": X -= 1;
                     break;
-                case 'E': X += 1;
+                case "E": X += 1;
                     break;
-                default: direction = 'N';
+                default: direction = "N";
                     break;
             }
         }
