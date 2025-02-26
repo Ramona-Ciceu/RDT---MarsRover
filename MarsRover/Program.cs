@@ -11,7 +11,9 @@ namespace MarsRover {
 
         static void Main(string[] args) {
 
+            //Storing plateau size
             Plateau plateau = null;
+            //Plateau setup
             Console.WriteLine("Please enter the plateau size: X and Y: ");
 
             //Reading user input for the plateau size
