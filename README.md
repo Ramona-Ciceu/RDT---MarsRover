@@ -40,7 +40,7 @@ E -> turnRight -> S
 S -> turnRight -> W
 W -> turnRight -> N
 
-	•	Implement a method that updates the direction based on input.
+Implement a method that updates the direction based on input.
 Handling Movement (M Command)
 	•	Move forward based on the current direction: 
 N -> (x, y+1)
@@ -48,7 +48,7 @@ S -> (x, y-1)
 E -> (x+1, y)
 W -> (x-1, y)
 
-	•	Before moving, check if the new position is within the plateau’s boundaries.
+Before moving, check if the new position is within the plateau’s boundaries.
 Example Execution: If a rover starts at (1, 2, N) and receives instructions LMLMLMLMM, process step by step:
 	1	L → Turn left → W
 	2	M → Move forward → (0,2)
