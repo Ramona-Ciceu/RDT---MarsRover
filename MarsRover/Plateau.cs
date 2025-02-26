@@ -15,10 +15,10 @@ namespace MarsRover
 
         //Constructor
         //Initialiasing the upper (x,y) coordinates
-        public Plateau(int upperx, int uppery)
+        public Plateau(int upperX, int upperY)
         {
-            this.upperX = upperx;
-            this.upperY = upperx;
+            this.upperX = upperX;
+            this.upperY = upperY;
         }
 
 
